@@ -26,7 +26,10 @@ Il flusso di dati all'interno della WAU è gestito in modo dinamico, grazie all'
 
 La Waterfall Arithmetic Unit rappresenta un importante passo avanti nel campo dell'elaborazione parallela. Grazie alla sua architettura innovativa e al suo approccio basato sul flusso di dati, la WAU offre un'elevata efficienza, scalabilità e flessibilità, aprendo nuove prospettive per lo sviluppo di applicazioni ad alte prestazioni.
 
-### Applicazioni
+## Diagramma
+![](diagram.drawio.svg)
+
+## Applicazioni
 
 L'architettura unica e le capacità della Waterfall Arithmetic Unit la rendono uno strumento potente in diverse aree chiave, in particolare dove l'elaborazione matematica ad alto flusso di dati, i calcoli matematici efficienti e specifici carichi di lavoro di intelligenza artificiale sono fondamentali.
 
@@ -50,9 +53,6 @@ L'architettura unica e le capacità della Waterfall Arithmetic Unit la rendono u
 
 **In sintesi, la Waterfall Arithmetic Unit ha il potenziale per rivoluzionare vari campi che richiedono calcoli matematici ad alte prestazioni. La sua miscela unica di efficienza, scalabilità e flessibilità la rende una prospettiva entusiasmante per il futuro dell'informatica, in particolare in aree in cui le architetture di calcolo tradizionali affrontano limitazioni.** 
 
-
-### Diagramma
-![](diagram.drawio.svg)
 
 ### Riferimenti
 

@@ -26,7 +26,10 @@ The dataflow within the WAU is managed dynamically, thanks to the use of flow in
 
 The Waterfall Arithmetic Unit represents a significant step forward in the field of parallel processing. Thanks to its innovative architecture and its dataflow-based approach, the WAU offers high efficiency, scalability, and flexibility, opening new perspectives for the development of high-performance applications. 
 
-# Applications
+## Diagram
+![](diagram.drawio.svg)
+
+## Applications
 
 The Waterfall Arithmetic Unit's unique architecture and capabilities position it as a powerful tool in several key areas, particularly where high data flow math processing, efficient mathematical computations, and specific artificial intelligence workloads are critical.
 
@@ -50,9 +53,6 @@ The Waterfall Arithmetic Unit's unique architecture and capabilities position it
 
 **In summary, the Waterfall Arithmetic Unit has the potential to revolutionize various fields requiring high-performance mathematical computations. Its unique blend of efficiency, scalability, and flexibility makes it an exciting prospect for the future of computing, particularly in areas where traditional computing architectures face limitations.** 
 
-
-### Diagram
-![](diagram.drawio.svg)
 
 ### References
 
