@@ -58,4 +58,4 @@ The Waterfall Arithmetic Unit's unique architecture and capabilities position it
 
 Riccardo Cecchini - rcecchini.ds@gmail.com
 
-26 Agosto 2024
+26 August 2024
