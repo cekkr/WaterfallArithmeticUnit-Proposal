@@ -16,6 +16,23 @@ The dataflow within the WAU is managed dynamically, thanks to the use of flow in
 * **Dynamic Resource Management:** The WAU architecture allows for dynamic allocation of computing resources based on the needs of the dataflow, avoiding waste and ensuring high efficiency.
 * **Scalability:** The grid structure of the WAU and the dynamic resource management make it highly scalable, allowing it to adapt to different computing needs.
 
+### Compiler
+The compiler plays a fundamental role in the efficient operation of a WAU (Waterfall Arithmetic Unit), particularly in the **management of data flow** to prevent the so-called **"data bouncing effect"**.
+
+The WAU is based on a grid architecture, where data flows dynamically between processing units (cores) through horizontal and vertical "data highways". The goal is to maximize the utilization of cores at each clock cycle, processing a large flow of operations.
+
+However, this dynamic flow can lead to the "data bouncing effect", where data bounces between cores without being processed, causing excessive energy consumption and slowdowns.
+
+**The role of the compiler is crucial to avoid this problem.** The WAU compiler does not simply translate code into machine instructions, but **determines the flow of data, concurrencies, and the order of execution of operations.** In essence, the compiler "programs" the cores, establishing optimal paths for the data and minimizing unnecessary transfers.
+
+**In summary, the compiler is essential to ensure the efficiency of the WAU:**
+
+* **Optimizes data flow**, preventing the "data bouncing effect" and reducing energy consumption.
+* **Maximizes core utilization**, allowing the processing of a large flow of operations in parallel.
+* **Determines the order of execution**, ensuring the correct operation of the unit.
+
+The compiler's ability to efficiently manage data routing is therefore a key factor in fully exploiting the potential of the WAU and achieving high performance in parallel processing. 
+
 ### Advantages
 
 * **High Efficiency:** The dataflow-based approach and dynamic resource management enable the WAU to achieve high efficiency in executing parallel arithmetic operations.

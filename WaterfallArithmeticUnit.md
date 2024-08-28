@@ -16,6 +16,23 @@ Il flusso di dati all'interno della WAU è gestito in modo dinamico, grazie all'
 * **Gestione dinamica delle risorse:** L'architettura della WAU consente di allocare dinamicamente le risorse di calcolo in base alle esigenze del flusso di dati, evitando sprechi e garantendo un'elevata efficienza.
 * **Scalabilità:** La struttura a griglia della WAU e la gestione dinamica delle risorse la rendono altamente scalabile, permettendo di adattarsi a diverse esigenze di calcolo.
 
+### Compilatore
+Il **compilatore** svolge un ruolo fondamentale nel funzionamento efficiente di una WAU (Waterfall Arithmetic Unit), in particolare nella **gestione del flusso di dati** per prevenire il cosiddetto **"data bouncing effect"**. 
+
+La WAU si basa su un'architettura a griglia, dove i dati fluiscono dinamicamente tra le unità di elaborazione (core) attraverso "data highway" orizzontali e verticali. L'obiettivo è massimizzare l'utilizzo dei core ad ogni ciclo di clock, elaborando un grande flusso di operazioni. 
+
+Tuttavia, questo flusso dinamico può portare al "data bouncing effect", dove i dati rimbalzano tra i core senza essere elaborati, causando un eccessivo consumo energetico e rallentamenti.
+
+**Il ruolo del compilatore è cruciale per evitare questo problema.** Il compilatore della WAU non si limita a tradurre il codice in istruzioni macchina, ma **determina il flusso dei dati, le concorrenze e l'ordine di esecuzione delle operazioni.** In sostanza, il compilatore "programma" i core, stabilendo percorsi ottimali per i dati e minimizzando i trasferimenti inutili.
+
+**In sintesi, il compilatore è essenziale per garantire l'efficienza della WAU:**
+
+* **Ottimizza il flusso di dati**, prevenendo il "data bouncing effect" e riducendo il consumo energetico.
+* **Massimizza l'utilizzo dei core**, permettendo l'elaborazione di un grande flusso di operazioni in parallelo.
+* **Determina l'ordine di esecuzione**, garantendo il corretto funzionamento dell'unità.
+
+La capacità del compilatore di gestire in modo efficiente il routing dei dati è quindi un fattore chiave per sfruttare appieno le potenzialità della WAU e raggiungere prestazioni elevate nell'elaborazione parallela. 
+
 ### Vantaggi
 
 * **Elevata efficienza:** L'approccio basato sul flusso di dati e la gestione dinamica delle risorse consentono alla WAU di raggiungere un'elevata efficienza nell'esecuzione di operazioni aritmetiche parallele.
