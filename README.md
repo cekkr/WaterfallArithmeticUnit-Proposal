@@ -5,7 +5,7 @@ Ideally, the project should be developed using a dynamic Verilog project, using 
 
 There are two versions of the document about WAU basic concepts:
 
-- [The English version](WaterfallArithmeticUnit.en.md)
-- [The Italian version](WaterfallArithmeticUnit.md)
+- [English version](WaterfallArithmeticUnit.en.md)
+- [Italian version](WaterfallArithmeticUnit.md)
 
 The concept was conceived by Riccardo Cecchini <rcecchini.ds@gmail.com>, August 2024
