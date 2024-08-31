@@ -70,6 +70,9 @@ The Waterfall Arithmetic Unit's unique architecture and capabilities position it
 
 **In summary, the Waterfall Arithmetic Unit has the potential to revolutionize various fields requiring high-performance mathematical computations. Its unique blend of efficiency, scalability, and flexibility makes it an exciting prospect for the future of computing, particularly in areas where traditional computing architectures face limitations.** 
 
+### Clarifications
+
+* Even if used "dataflow" as terminology, WAU is not a dataflow architecture processor. Excluded concurrent operations, the flow of the same algorithm is deterministic.  
 
 ### References
 
