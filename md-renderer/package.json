@@ -1,0 +1,21 @@
+{
+  "name": "md-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.10.1",
+    "crypto": "^1.0.1",
+    "puppeteer": "^23.11.1"
+  },
+  "optionalDependencies": {
+    "mathjax-node": "^2.1.1"
+  }
+}

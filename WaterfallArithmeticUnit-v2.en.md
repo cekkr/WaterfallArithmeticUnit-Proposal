@@ -28,7 +28,7 @@ The WAU's fundamental innovation lies in treating arithmetic computation as a fl
 
 ### 2.1 Matrix Topology
 
-The WAU consists of an $M \times N$ matrix of Processing Elements (PEs), where each element can be specialized for particular arithmetic operations:
+The WAU consists of an $$M \times N$$ matrix of Processing Elements (PEs), where each element can be specialized for particular arithmetic operations:
 
 $$\text{WAU} = \begin{bmatrix}
 PE_{0,0} & PE_{0,1} & \cdots & PE_{0,N-1} \\
@@ -282,9 +282,9 @@ The theoretical peak throughput for the WAU is:
 $$T_{peak} = M \times N \times f_{clock} \times \text{OPS}_{per\_cycle}$$
 
 Where:
-- $M \times N$ = Total number of PEs
-- $f_{clock}$ = Operating frequency
-- $\text{OPS}_{per\_cycle}$ = Operations per cycle per PE
+- $$M \times N$$ = Total number of PEs
+- $$f_{clock}$$ = Operating frequency
+- $$\text{OPS}_{per\_cycle}$$ = Operations per cycle per PE
 
 ### 6.2 Energy Efficiency
 
@@ -292,7 +292,7 @@ Energy consumption follows:
 
 $$E_{total} = E_{compute} + E_{communication} + E_{memory}$$
 
-The WAU minimizes $E_{communication}$ through:
+The WAU minimizes $$E_{communication}$$ through:
 - Locality optimization
 - Shortest path routing
 - Data reuse strategies
@@ -303,14 +303,14 @@ The architecture scales according to:
 
 $$\text{Speedup}(n) = \frac{T_{sequential}}{T_{parallel}(n)} \approx \frac{n}{\alpha + \frac{1-\alpha}{n}}$$
 
-Where $\alpha$ represents the inherently sequential portion of the algorithm.
+Where $$\alpha$$ represents the inherently sequential portion of the algorithm.
 
 ## 7. Application Domains
 
 ### 7.1 Scientific Computing
 
 **Matrix Operations**:
-- Dense matrix multiplication: $O(n^3)$ operations parallelized across $O(n^2)$ PEs
+- Dense matrix multiplication: $$O(n^3)$$ operations parallelized across $$O(n^2)$$ PEs
 - Sparse matrix computations with dynamic routing
 - Linear algebra primitives (BLAS operations)
 
