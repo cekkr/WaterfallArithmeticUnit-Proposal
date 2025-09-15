@@ -206,67 +206,7 @@ def extract_and_replace_latex(markdown_content, output_dir):
     
     # Pattern for display math ($...$) and inline math ($...$)
     # More careful pattern to avoid matching dollar signs in text
-    display_pattern = re.compile(r'\$\$([^\$]+)\$\
-
-def process_markdown_file(input_file_path):
-    """Reads a markdown file, processes mermaid and latex, and saves the new markdown and images."""
-    # Check dependencies first
-    issues = check_dependencies()
-    if issues:
-        print("⚠️  Dependency issues found:", file=sys.stderr)
-        for issue in issues:
-            print(issue, file=sys.stderr)
-        print("\nContinuing anyway, but some features may not work...\n")
-    
-    # Read input file
-    try:
-        with open(input_file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except FileNotFoundError:
-        print(f"Error: The file '{input_file_path}' was not found.", file=sys.stderr)
-        return 1
-    except Exception as e:
-        print(f"Error reading file: {e}", file=sys.stderr)
-        return 1
-    
-    # Create output directory
-    output_dir = create_output_directory(input_file_path)
-    print(f"Output directory: {output_dir}\n")
-    
-    # Process Mermaid graphs
-    content = extract_and_replace_mermaid(content, output_dir)
-    
-    # Process LaTeX expressions
-    content = extract_and_replace_latex(content, output_dir)
-    
-    # Write the modified markdown
-    output_markdown_path = os.path.join(output_dir, os.path.basename(input_file_path))
-    try:
-        with open(output_markdown_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"\n✅ Processing complete!")
-        print(f"   Output markdown: {output_markdown_path}")
-        print(f"   Images saved in: {output_dir}")
-    except Exception as e:
-        print(f"Error writing output: {e}", file=sys.stderr)
-        return 1
-    
-    return 0
-
-def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 md_renderer.py <markdown_file>")
-        print("\nThis script converts Mermaid diagrams and LaTeX expressions")
-        print("in markdown files to images.")
-        sys.exit(1)
-    
-    input_file = sys.argv[1]
-    exit_code = process_markdown_file(input_file)
-    sys.exit(exit_code)
-
-if __name__ == "__main__":
-    main()
-)
+    display_pattern = re.compile(r'\$\$([^\$]+)\$\$')
     inline_pattern = re.compile(r'(?<!\$)\$(?!\$)([^\$\n]+)\$(?!\$)')
     
     all_matches = []
