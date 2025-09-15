@@ -79,3 +79,6 @@ The Waterfall Arithmetic Unit's unique architecture and capabilities position it
 Riccardo Cecchini - rcecchini.ds@gmail.com
 
 26 August 2024
+
+<!-- https://www.researchgate.net/publication/388732384_The_Waterfall_Arithmetic_Unit_A_High-Efficiency_Parallel_Processing_Architecture -->
+
